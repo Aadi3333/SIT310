@@ -23,7 +23,7 @@ class Lane_Detector:
         self.cv_bridge = CvBridge()
 
         # Subscribing to the image topic
-        self.image_sub = rospy.Subscriber('/akandb/camera_node/image/compressed', CompressedImage, self.image_callback, queue_size=1)
+        self.image_sub = rospy.Subscriber('/duckie/camera_node/image/compressed', CompressedImage, self.image_callback, queue_size=1)
         
         rospy.init_node("my_lane_detector")
 
